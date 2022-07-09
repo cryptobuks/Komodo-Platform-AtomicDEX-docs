@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>best_orders | AtomicDEX Documentation</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="mark_only.svg">
+    <meta name="description" content="Documentation for developers building on AtomicDEX">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@komodoplatform">
+    <meta name="twitter:title" content="Komodo Developer Documentation">
+    <meta name="twitter:description" content="Documentation for developers building on the Komodo Platform">
+    <meta name="twitter:image" content="https://developers.komodoplatform.com/start-here-pics/Dev_Docs_Introduction_small.png">
+    <link rel="preload" href="/assets/css/0.styles.075bd052.css" as="style"><link rel="preload" href="/assets/js/app.9334f521.js" as="script"><link rel="preload" href="/assets/js/5.a7a1516b.js" as="script"><link rel="preload" href="/assets/js/4.fb8bc2c9.js" as="script"><link rel="preload" href="/assets/js/16.e9c88057.js" as="script"><link rel="preload" href="/assets/js/6.e14e0cf2.js" as="script"><link rel="prefetch" href="/assets/js/10.207d8d63.js"><link rel="prefetch" href="/assets/js/100.d759c560.js"><link rel="prefetch" href="/assets/js/101.35f36845.js"><link rel="prefetch" href="/assets/js/102.5a68cfc5.js"><link rel="prefetch" href="/assets/js/103.54e26107.js"><link rel="prefetch" href="/assets/js/104.c6356c4d.js"><link rel="prefetch" href="/assets/js/105.e888a4b5.js"><link rel="prefetch" href="/assets/js/106.10950d14.js"><link rel="prefetch" href="/assets/js/107.e177b7d0.js"><link rel="prefetch" href="/assets/js/108.7a0506fc.js"><link rel="prefetch" href="/assets/js/109.6d50220c.js"><link rel="prefetch" href="/assets/js/11.8d78e154.js"><link rel="prefetch" href="/assets/js/110.c638a1bd.js"><link rel="prefetch" href="/assets/js/111.e07c0a16.js"><link rel="prefetch" href="/assets/js/112.5da1b16d.js"><link rel="prefetch" href="/assets/js/113.b693b578.js"><link rel="prefetch" href="/assets/js/114.f4d86330.js"><link rel="prefetch" href="/assets/js/115.489ae1d3.js"><link rel="prefetch" href="/assets/js/116.e293ed02.js"><link rel="prefetch" href="/assets/js/117.461b95a7.js"><link rel="prefetch" href="/assets/js/118.bab6c3df.js"><link rel="prefetch" href="/assets/js/119.ae4ec66c.js"><link rel="prefetch" href="/assets/js/12.8b92d67b.js"><link rel="prefetch" href="/assets/js/13.7635b51a.js"><link rel="prefetch" href="/assets/js/14.17b768b2.js"><link rel="prefetch" href="/assets/js/15.2aa9ed97.js"><link rel="prefetch" href="/assets/js/17.eb1b3b9c.js"><link rel="prefetch" href="/assets/js/18.519964b0.js"><link rel="prefetch" href="/assets/js/19.190a137c.js"><link rel="prefetch" href="/assets/js/20.2fe1b1bf.js"><link rel="prefetch" href="/assets/js/21.c776c925.js"><link rel="prefetch" href="/assets/js/22.d9e9818d.js"><link rel="prefetch" href="/assets/js/23.a0412ee2.js"><link rel="prefetch" href="/assets/js/24.171097d2.js"><link rel="prefetch" href="/assets/js/25.42f277f0.js"><link rel="prefetch" href="/assets/js/26.03d15bfc.js"><link rel="prefetch" href="/assets/js/27.bdf9e446.js"><link rel="prefetch" href="/assets/js/28.40753719.js"><link rel="prefetch" href="/assets/js/29.a52403da.js"><link rel="prefetch" href="/assets/js/30.9e1473f7.js"><link rel="prefetch" href="/assets/js/31.4c076a02.js"><link rel="prefetch" href="/assets/js/32.7a7b12db.js"><link rel="prefetch" href="/assets/js/33.d6ca5f42.js"><link rel="prefetch" href="/assets/js/34.2d7c7f05.js"><link rel="prefetch" href="/assets/js/35.ad096de4.js"><link rel="prefetch" href="/assets/js/36.0b7b610f.js"><link rel="prefetch" href="/assets/js/37.9fea2460.js"><link rel="prefetch" href="/assets/js/38.2a71f118.js"><link rel="prefetch" href="/assets/js/39.9529033f.js"><link rel="prefetch" href="/assets/js/40.d96734bd.js"><link rel="prefetch" href="/assets/js/41.f5665228.js"><link rel="prefetch" href="/assets/js/42.f4497506.js"><link rel="prefetch" href="/assets/js/43.0a8b4f8c.js"><link rel="prefetch" href="/assets/js/44.8e56f289.js"><link rel="prefetch" href="/assets/js/45.89cb3f43.js"><link rel="prefetch" href="/assets/js/46.803361ba.js"><link rel="prefetch" href="/assets/js/47.4b7e1391.js"><link rel="prefetch" href="/assets/js/48.fea508be.js"><link rel="prefetch" href="/assets/js/49.b97e6149.js"><link rel="prefetch" href="/assets/js/50.f47bdc1d.js"><link rel="prefetch" href="/assets/js/51.83e3bb8a.js"><link rel="prefetch" href="/assets/js/52.1e305da1.js"><link rel="prefetch" href="/assets/js/53.e423f953.js"><link rel="prefetch" href="/assets/js/54.5a0db4af.js"><link rel="prefetch" href="/assets/js/55.55938d47.js"><link rel="prefetch" href="/assets/js/56.2afecacb.js"><link rel="prefetch" href="/assets/js/57.2d96be7c.js"><link rel="prefetch" href="/assets/js/58.3a8a118a.js"><link rel="prefetch" href="/assets/js/59.57fc2419.js"><link rel="prefetch" href="/assets/js/60.6779da5c.js"><link rel="prefetch" href="/assets/js/61.9c0266cd.js"><link rel="prefetch" href="/assets/js/62.82976645.js"><link rel="prefetch" href="/assets/js/63.d966b3fa.js"><link rel="prefetch" href="/assets/js/64.95eb2ce8.js"><link rel="prefetch" href="/assets/js/65.25e5784d.js"><link rel="prefetch" href="/assets/js/66.94ac609b.js"><link rel="prefetch" href="/assets/js/67.d46ab6e5.js"><link rel="prefetch" href="/assets/js/68.5610b41b.js"><link rel="prefetch" href="/assets/js/69.5bb4eff1.js"><link rel="prefetch" href="/assets/js/7.4ffeed32.js"><link rel="prefetch" href="/assets/js/70.4e05940a.js"><link rel="prefetch" href="/assets/js/71.72206ecd.js"><link rel="prefetch" href="/assets/js/72.cb3cf5dd.js"><link rel="prefetch" href="/assets/js/73.f12e3ad7.js"><link rel="prefetch" href="/assets/js/74.d8bb4893.js"><link rel="prefetch" href="/assets/js/75.06e20c25.js"><link rel="prefetch" href="/assets/js/76.d8d140db.js"><link rel="prefetch" href="/assets/js/77.950cd4bb.js"><link rel="prefetch" href="/assets/js/78.b6cac03a.js"><link rel="prefetch" href="/assets/js/79.f06b5f2b.js"><link rel="prefetch" href="/assets/js/8.9d22658d.js"><link rel="prefetch" href="/assets/js/80.3ca2b7a8.js"><link rel="prefetch" href="/assets/js/81.92378501.js"><link rel="prefetch" href="/assets/js/82.eed77200.js"><link rel="prefetch" href="/assets/js/83.8ec34649.js"><link rel="prefetch" href="/assets/js/84.95bdc554.js"><link rel="prefetch" href="/assets/js/85.34068670.js"><link rel="prefetch" href="/assets/js/86.b5560f3d.js"><link rel="prefetch" href="/assets/js/87.033e467c.js"><link rel="prefetch" href="/assets/js/88.938d0ea1.js"><link rel="prefetch" href="/assets/js/89.829da3eb.js"><link rel="prefetch" href="/assets/js/9.387a7ec6.js"><link rel="prefetch" href="/assets/js/90.1a6ce67e.js"><link rel="prefetch" href="/assets/js/91.9e3fe369.js"><link rel="prefetch" href="/assets/js/92.db216269.js"><link rel="prefetch" href="/assets/js/93.464da088.js"><link rel="prefetch" href="/assets/js/94.95821292.js"><link rel="prefetch" href="/assets/js/95.d458a4ae.js"><link rel="prefetch" href="/assets/js/96.dd5e797f.js"><link rel="prefetch" href="/assets/js/97.d73d65e0.js"><link rel="prefetch" href="/assets/js/98.7a71549a.js"><link rel="prefetch" href="/assets/js/99.31fac60e.js"><link rel="prefetch" href="/assets/js/vendors~cookielaw.b91b70be.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.c8a67369.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.075bd052.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo_light.svg" alt="AtomicDEX Documentation" class="logo"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/basic-docs/atomicdex/introduction-to-atomicdex.html" class="nav-link">
+  Docs
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex-api-legacy/rational_number_note.html" class="nav-link">
+  API (Legacy)
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex-api-20/" class="nav-link">
+  API 2.0 (Master)
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex-api-20-dev/" class="nav-link router-link-active">
+  API 2.0 (Dev)
+</a></div><div class="nav-item"><a href="https://atomicdex.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Atomicdex.io
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://komodoplatform.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  KomodoPlatform.com
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/KomodoPlatform/AtomicDEX-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/basic-docs/atomicdex/introduction-to-atomicdex.html" class="nav-link">
+  Docs
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex-api-legacy/rational_number_note.html" class="nav-link">
+  API (Legacy)
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex-api-20/" class="nav-link">
+  API 2.0 (Master)
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex-api-20-dev/" class="nav-link router-link-active">
+  API 2.0 (Dev)
+</a></div><div class="nav-item"><a href="https://atomicdex.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Atomicdex.io
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://komodoplatform.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  KomodoPlatform.com
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/KomodoPlatform/AtomicDEX-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>AtomicDEX API 2.0 (Dev)</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/basic-docs/atomicdex-api-20-dev/" aria-current="page" class="sidebar-link">AtomicDEX-API RPC Protocol v2.0 (Dev)</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/message_signing.html" class="sidebar-link">Message Signing</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/add_node_to_version_stat.html" class="sidebar-link">add_node_to_version_stat</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/remove_node_from_version_stat.html" class="sidebar-link">remove_node_from_version_stat</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/start_version_stat_collection.html" class="sidebar-link">start_version_stat_collection</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/update_version_stat_collection.html" class="sidebar-link">update_version_stat_collection</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/stop_version_stat_collection.html" class="sidebar-link">stop_version_stat_collection</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/best_orders.html" aria-current="page" class="active sidebar-link">best_orders</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/get_public_key.html" class="sidebar-link">get_public_key</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/get_public_key_hash.html" class="sidebar-link">get_public_key_hash</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/trade_preimage.html" class="sidebar-link">trade_preimage</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/withdraw.html" class="sidebar-link">withdraw</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/stop_simple_market_maker_bot.html" class="sidebar-link">stop_simple_market_maker_bot</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/start_simple_market_maker_bot.html" class="sidebar-link">start_simple_market_maker_bot</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/telegram_alerts.html" class="sidebar-link">telegram_alerts</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/add_delegation.html" class="sidebar-link">add_delegation</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/get_staking_infos.html" class="sidebar-link">get_staking_infos</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/remove_delegation.html" class="sidebar-link">remove_delegation</a></li><li><a href="/basic-docs/atomicdex-api-20-dev/recreate_swap_data.html" class="sidebar-link">recreate_swap_data</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="best-orders"><a href="#best-orders" class="header-anchor">#</a> best_orders</h1> <p>The <code>best_orders</code> method returns the best priced trades available on the orderbook. There are two options for the request, either <code>volume</code> or <code>number</code>.
+If request is made by <code>volume</code>, the returned results will show the best prices for trades that can fill the requested volume.
+If request is made by <code>number</code>, the returned results will show a list of the best prices, <code>number</code> pairs long (e.g. top 5 best priced orders).</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The response of this method can contain coins that are not activated on the AtomicDEX API instance.
+Activation will be required to proceed with the trade.</p></div> <h4 id="arguments"><a href="#arguments" class="header-anchor">#</a> Arguments</h4> <table><thead><tr><th>Structure</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>coin</td> <td>string</td> <td>The ticker of the coin to get best orders</td></tr> <tr><td>action</td> <td>string</td> <td>Whether to <code>buy</code> or <code>sell</code> the selected coin</td></tr> <tr><td>request_by.type</td> <td>string</td> <td>Defines whether requesting by <code>volume</code> or by <code>number</code></td></tr> <tr><td>request_by.value</td> <td>string</td> <td>If <code>request_by.type</code> is <code>volume</code>, the amount of <code>coin</code> user is willing to buy or sell. If <code>request_by.type</code> is <code>number</code>, the number of best price trades to return</td></tr></tbody></table> <h4 id="response"><a href="#response" class="header-anchor">#</a> Response</h4> <table><thead><tr><th>Structure</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>result</td> <td>object (map)</td> <td>the <code>ticker -&gt; array of order entries</code> map</td></tr></tbody></table> <p>where order entry has the following structure</p> <table><thead><tr><th>Structure</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>coin</td> <td>string</td> <td>the ticker of the coin</td></tr> <tr><td>address</td> <td>string</td> <td>the address offering the trade</td></tr> <tr><td>price</td> <td>string (decimal)</td> <td>the price the user is willing to buy or sell per one unit of the coin from request</td></tr> <tr><td>price_rat</td> <td>rational</td> <td>the price in num-rational crate format</td></tr> <tr><td>price_fraction</td> <td>object (fraction)</td> <td>the price represented as an object</td></tr> <tr><td>maxvolume</td> <td>string (decimal)</td> <td>the maximum amount of <code>base</code> the offer provider is willing to sell</td></tr> <tr><td>max_volume_rat</td> <td>rational</td> <td>the max volume in num-rational crate format</td></tr> <tr><td>max_volume_fraction</td> <td>object (rational)</td> <td>the max volume represented as an object</td></tr> <tr><td>min_volume</td> <td>string (decimal)</td> <td>the minimum amount of <code>base</code> coin the offer provider is willing to sell</td></tr> <tr><td>min_volume_rat</td> <td>rational</td> <td>the min volume in num-rational crate format</td></tr> <tr><td>min_volume_fraction</td> <td>object (rational)</td> <td>the min volume represented as an object</td></tr> <tr><td>pubkey</td> <td>string</td> <td>the pubkey of the offer provider</td></tr> <tr><td>age</td> <td>number</td> <td>the age of the offer (in seconds)</td></tr> <tr><td>zcredits</td> <td>number</td> <td>the zeroconf deposit amount (deprecated)</td></tr> <tr><td>netid</td> <td>number</td> <td>the id of the network on which the request is made (default is <code>0</code>)</td></tr> <tr><td>uuid</td> <td>string</td> <td>the uuid of order</td></tr> <tr><td>is_mine</td> <td>bool</td> <td>whether the order is placed by me</td></tr> <tr><td>base_max_volume</td> <td>string (decimal)</td> <td>the maximum amount of <code>base</code> coin the offer provider is willing to buy or sell</td></tr> <tr><td>base_max_volume_rat</td> <td>rational</td> <td>the <code>base_max_volume</code> in num-rational crate format</td></tr> <tr><td>base_max_volume_fraction</td> <td>object (rational)</td> <td>the <code>base_max_volume</code> represented as an object</td></tr> <tr><td>base_min_volume</td> <td>string (decimal)</td> <td>the minimum amount of <code>base</code> coin the offer provider is willing to buy or sell</td></tr> <tr><td>base_min_volume_rat</td> <td>rational</td> <td>the <code>base_min_volume</code> in num-rational crate format</td></tr> <tr><td>base_min_volume_fraction</td> <td>object (rational)</td> <td>the <code>base_min_volume</code> represented as an object</td></tr> <tr><td>base_confs</td> <td>number</td> <td>the confirmations settings of <code>base</code> coin set by the offer provider</td></tr> <tr><td>base_nota</td> <td>bool</td> <td>the notarisation settings of <code>base</code> coin set by the offer provider</td></tr> <tr><td>rel_max_volume</td> <td>string (decimal)</td> <td>the maximum amount of <code>rel</code> coin the offer provider is willing to buy or sell</td></tr> <tr><td>rel_max_volume_rat</td> <td>rational</td> <td>the <code>rel_max_volume</code> max volume in num-rational crate format</td></tr> <tr><td>rel_max_volume_fraction</td> <td>object (rational)</td> <td>the <code>rel_max_volume</code> max volume represented as an object</td></tr> <tr><td>rel_min_volume</td> <td>string (decimal)</td> <td>the minimum amount of <code>rel</code> coin the offer provider is willing to buy or sell</td></tr> <tr><td>rel_min_volume_rat</td> <td>rational</td> <td>the <code>rel_min_volume</code> in num-rational crate format</td></tr> <tr><td>rel_min_volume_fraction</td> <td>object (rational)</td> <td>the <code>rel_min_volume</code> represented as an object</td></tr> <tr><td>rel_confs</td> <td>number</td> <td>the confirmations settings of <code>rel</code> coin set by the offer provider</td></tr> <tr><td>rel_nota</td> <td>bool</td> <td>the notarisation settings of <code>rel</code> coin set by the offer provider</td></tr> <tr><td>original_tickers</td> <td>list (string)</td> <td>Tickers included in response when <code>orderbook_ticker</code> is configured for the queried coin in <code>coins</code> file</td></tr></tbody></table> <h4 id="examples"><a href="#examples" class="header-anchor">#</a> 📌 Examples</h4> <h4 id="command-by-number"><a href="#command-by-number" class="header-anchor">#</a> Command (by number)</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> --url <span class="token string">&quot;http://127.0.0.1:7783&quot;</span> --data <span class="token string">&quot;{
+    <span class="token entity" title="\&quot;">\&quot;</span>userpass<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$userpass</span><span class="token entity" title="\&quot;">\&quot;</span>,
+    <span class="token entity" title="\&quot;">\&quot;</span>method<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>best_orders<span class="token entity" title="\&quot;">\&quot;</span>,
+    <span class="token entity" title="\&quot;">\&quot;</span>mmrpc<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>2.0<span class="token entity" title="\&quot;">\&quot;</span>,
+    <span class="token entity" title="\&quot;">\&quot;</span>params<span class="token entity" title="\&quot;">\&quot;</span>: {
+        <span class="token entity" title="\&quot;">\&quot;</span>coin<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>TKL<span class="token entity" title="\&quot;">\&quot;</span>,
+        <span class="token entity" title="\&quot;">\&quot;</span>action<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>buy<span class="token entity" title="\&quot;">\&quot;</span>,
+        <span class="token entity" title="\&quot;">\&quot;</span>request_by<span class="token entity" title="\&quot;">\&quot;</span>: { 
+              <span class="token entity" title="\&quot;">\&quot;</span>type<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>number<span class="token entity" title="\&quot;">\&quot;</span>,
+              <span class="token entity" title="\&quot;">\&quot;</span>value<span class="token entity" title="\&quot;">\&quot;</span>: 1
+        }
+    }
+}&quot;</span>
+</code></pre></div><div style="margin-top:0.5rem;"><div class="collapsed"><button>Show Response</button> <div style="display:none;"><h4 id="response-by-number-success"><a href="#response-by-number-success" class="header-anchor">#</a> Response (by number - success)</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;mmrpc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;result&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;orders&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;MORTY&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MORTY&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RKGn1jkeS7VNLfwY74esW7a8JFfLNj1Yoo&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.7&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">7</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">10</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;7&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;03c6a78589e18b482aea046975e6d0acbdea7bf7dbf04d9d5bd67fda917815e3ed&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;785065d4-3d46-44c7-a0d7-402bf6104750&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.9&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">9</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">10</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;9&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.9&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">9</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">10</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;9&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.63&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">63</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">100</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;63&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.63&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">63</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">100</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;63&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;base_confs&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;base_nota&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rel_confs&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rel_nota&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ETH&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ETH&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0x4b2d0d6c2c785217457b69b922a2a9cea98f71e9&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.8&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">4</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">5</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;03c6a78589e18b482aea046975e6d0acbdea7bf7dbf04d9d5bd67fda917815e3ed&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;09628057-a42f-4868-bdb7-b719bc75477e&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.9&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">9</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">10</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;9&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.00777&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">777</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">100000</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.72&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">18</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">25</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;18&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;25&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.006216&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">777</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span><span class="token punctuation">,</span>
+              <span class="token punctuation">[</span>
+                <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span>
+                  <span class="token number">125000</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;125000&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;base_confs&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;base_nota&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rel_confs&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;rel_nota&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;original_tickers&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;BTC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;BTC-segwit&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span> 
+</code></pre></div></div></div></div> <h4 id="command-by-volume"><a href="#command-by-volume" class="header-anchor">#</a> Command (by volume)</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> --url <span class="token string">&quot;http://127.0.0.1:7783&quot;</span> --data <span class="token string">&quot;{
+    <span class="token entity" title="\&quot;">\&quot;</span>userpass<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span><span class="token variable">$userpass</span><span class="token entity" title="\&quot;">\&quot;</span>,
+    <span class="token entity" title="\&quot;">\&quot;</span>method<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>best_orders<span class="token entity" title="\&quot;">\&quot;</span>,
+    <span class="token entity" title="\&quot;">\&quot;</span>mmrpc<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>2.0<span class="token entity" title="\&quot;">\&quot;</span>,
+    <span class="token entity" title="\&quot;">\&quot;</span>params<span class="token entity" title="\&quot;">\&quot;</span>: {
+        <span class="token entity" title="\&quot;">\&quot;</span>coin<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>BTC<span class="token entity" title="\&quot;">\&quot;</span>,
+        <span class="token entity" title="\&quot;">\&quot;</span>action<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>buy<span class="token entity" title="\&quot;">\&quot;</span>,
+        <span class="token entity" title="\&quot;">\&quot;</span>request_by<span class="token entity" title="\&quot;">\&quot;</span>: { 
+              <span class="token entity" title="\&quot;">\&quot;</span>type<span class="token entity" title="\&quot;">\&quot;</span>: <span class="token entity" title="\&quot;">\&quot;</span>volume<span class="token entity" title="\&quot;">\&quot;</span>,
+              <span class="token entity" title="\&quot;">\&quot;</span>value<span class="token entity" title="\&quot;">\&quot;</span>: 0.01
+        }
+    }
+}&quot;</span>
+</code></pre></div><div style="margin-top:0.5rem;"><div class="collapsed"><button>Show Response</button> <div style="display:none;"><h4 id="response-by-volume-success"><a href="#response-by-volume-success" class="header-anchor">#</a> Response (by volume - success)</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;mmrpc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;result&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;orders&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;DASH&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DASH&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;XefPeyw3KQYa5PUJeTMQRhMHQZGVy4YMWa&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3333.333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">10000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0261eef15cbc141f555aff1aa40fb21de17a0a9e6897eee18c14c6032586b456b3&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;b17d7aee-2c0b-4311-935c-8c05e81f3813&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.097714296984&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3624352531</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">445948416</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;12214287123&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;125000000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.000002331&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2331</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1000000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2331&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1000000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;325.71432328&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4071429041</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">12500000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4071429041&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;12500000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.00777&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">777</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">100000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;LTC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;LTC&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;LPCW5waySMa3BFZsxi2UrBjFnS464b97WU&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10000&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">10000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0261eef15cbc141f555aff1aa40fb21de17a0a9e6897eee18c14c6032586b456b3&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;07764da3-bbec-4e50-9711-2baf0f8bf30b&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.11423436&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2855859</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">25000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2855859&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;25000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.000000777&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">777</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1000000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1000000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1142.3436&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2855859</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2500</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2855859&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2500&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.00777&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">777</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">100000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;base_confs&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;base_nota&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rel_confs&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rel_nota&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;KMD&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;KMD&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RDFjuFARxX8YzTEvFk2JfgzhLV9QcPWy5f&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;322580.6451612903225806451612903225806451612903225806451612903225806451612903225806451612903225806452&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">10000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">31</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10000000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;31&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0261eef15cbc141f555aff1aa40fb21de17a0a9e6897eee18c14c6032586b456b3&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;adff2e1d-4514-49ea-a30b-9575711767cd&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.031&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">31</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;31&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.000000024087&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">24087</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3567587328</span><span class="token punctuation">,</span> <span class="token number">232</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;24087&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1000000000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10000&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">10000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.00777&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">777</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">100000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;DAI-ERC20&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DAI-ERC20&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0xe5e6d27100474d34cc0f87ee387756395019019c&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;33333333.33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">100000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0261eef15cbc141f555aff1aa40fb21de17a0a9e6897eee18c14c6032586b456b3&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;15a47eff-607e-4729-896b-6acb309d5022&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1075026242236026&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2258990909</span><span class="token punctuation">,</span> <span class="token number">125149</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">937459712</span><span class="token punctuation">,</span> <span class="token number">1164153</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;537513121118013&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5000000000000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0081585&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">16317</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;16317&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3583420.80745342&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2184652735</span><span class="token punctuation">,</span> <span class="token number">41716</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">50000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;179171040372671&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;50000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;271950&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">271950</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;271950&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;NMC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;NMC&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MzYv2Nn8H5RYSz8E4PMkngpQJT5ruqWV4N&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;80000&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">80000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;80000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0261eef15cbc141f555aff1aa40fb21de17a0a9e6897eee18c14c6032586b456b3&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;87e3e99c-481f-46cc-9a64-ccc89ba5e434&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.025&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;40&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.000000097125&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">777</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3705032704</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;8000000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2000&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.00777&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">777</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">100000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;DOGE&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DOGE&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;D97eMzDnf7EGTT4KXA2k7vq6TMR7JDpe1D&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;20000000&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">20000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;20000000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0261eef15cbc141f555aff1aa40fb21de17a0a9e6897eee18c14c6032586b456b3&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;14de5083-daee-4d82-bc41-ac809076bf5f&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.02074779&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2074779</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">100000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2074779&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.00777&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">777</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">100000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;777&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;414955.8&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2074779</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2074779&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;155400&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">155400</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;155400&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;ETH&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                <span class="token property">&quot;coin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ETH&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;address_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Transparent&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;address_data&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0xe5e6d27100474d34cc0f87ee387756395019019c&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;price&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;400000&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">400000</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;400000&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;pubkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0261eef15cbc141f555aff1aa40fb21de17a0a9e6897eee18c14c6032586b456b3&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;19220788-3643-4fb2-9445-e13515ef811e&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;is_mine&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.11209544&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1401193</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">12500000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1401193&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;12500000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;base_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0081585&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">16317</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2000000</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;16317&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2000000&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_max_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;44838.176&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5604772</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">125</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5604772&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;125&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;rel_min_volume&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;decimal&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3263.4&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;rational&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">16317</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;fraction&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;numer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;16317&quot;</span><span class="token punctuation">,</span>
+                        <span class="token property">&quot;denom&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5&quot;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;conf_settings&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;original_tickers&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;MONA&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;MONA-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;NMC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;NMC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;LTC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;LTC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;PIC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;PIC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;LCC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;LCC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;BSTY&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;BSTY-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;BTC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;BTC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;PPC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;PPC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;GLEEC-OLD&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;GLEEC-OLD-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;LBC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;LBC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;BTE&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;BTE-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;VTC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;VTC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;LTFN&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;LTFN-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;SYS&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;SYS-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;BTX&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;BTX-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tBTC-TEST&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;tBTC-TEST-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;CDN&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;CDN-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;FTC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;FTC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;GRS&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;GRS-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;RIC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;RIC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;XMY&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;XMY-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;VIA&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;VIA-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WHIVE&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;WHIVE-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;XEP&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;XEP-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;FJC&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;FJC-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;WCN&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;WCN-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;QTUM&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;QTUM-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tQTUM&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;tQTUM-segwit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;DGB&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;DGB-segwit&quot;</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></div></div> <div style="margin-top:0.5rem;"><div class="collapsed"><button>Show Response</button> <div style="display:none;"><h4 id="error-responses"><a href="#error-responses" class="header-anchor">#</a> Error Responses</h4> <p><code>InvalidRequest</code> - Invalid type (<code>number</code> value must be integer)
+<code>InvalidRequest</code> - Invalid type (type must be either <code>volume</code> or <code>number</code>, action mut be either <code>buy</code> or <code>sell</code>)
+<code>CoinIsWalletOnly</code> - Wallet only coins can not be traded.
+<code>P2PError</code> - There is a connection problem.</p></div></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/KomodoPlatform/AtomicDEX-docs/edit/master/docs/basic-docs/atomicdex-api-20-dev/best_orders.md" target="_blank" rel="noopener noreferrer">Suggest an improvement for this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">a minute ago</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/basic-docs/atomicdex-api-20-dev/stop_version_stat_collection.html" class="prev">
+        stop_version_stat_collection
+      </a></span> <span class="next"><a href="/basic-docs/atomicdex-api-20-dev/get_public_key.html">
+        get_public_key
+      </a>
+      →
+    </span></p></div> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9334f521.js" defer></script><script src="/assets/js/5.a7a1516b.js" defer></script><script src="/assets/js/4.fb8bc2c9.js" defer></script><script src="/assets/js/16.e9c88057.js" defer></script><script src="/assets/js/6.e14e0cf2.js" defer></script>
+  </body>
+</html>
